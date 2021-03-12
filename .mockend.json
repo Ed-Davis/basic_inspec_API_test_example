@@ -2,14 +2,14 @@
   "Post": {
     "title": "Testing APIs is cool",
     "views": "All my own",
-    "published": true,
+    "published": "boolean",
     "createdAt": "12-03-21",
     "comments": "Comment[]",
-    "id" : 1
+    "id" : "1"
   },
   "Comment": {
     "body": "InSpec can be fun!",
     "post": "Post",
-    "id" : 2
+    "id" : "2"
   }
 }
