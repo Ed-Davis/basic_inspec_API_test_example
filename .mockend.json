@@ -1,15 +1,13 @@
 {
-  "/": {
-    "name": "my_test_api"
+  "Post": {
+    "title": "string",
+    "views": "int",
+    "published": "boolean",
+    "createdAt": "date",
+    "comments": "Comment[]"
   },
-  "/data": {
-    "name": "Ed",
-    "code_monkey": true,
-    "valued": false
-  },
-  "/service": {
-    "type": "laundry",
-    "requires_money": true,
-    "id": 2
+  "Comment": {
+    "body": "string",
+    "post": "Post"
   }
 }
