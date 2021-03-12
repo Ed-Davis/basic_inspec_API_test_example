@@ -1,10 +1,9 @@
 # InSpec Overview and Rationale for choosing:
 
-While working on a project with a wide range of technologies (Azure, AWS, Terraform, Scaffold, Workspaces (Linux, Windows)) which is open ended
-I wanted to create a framework to address a number of QA dev's challenges but as the lead, wanted the flexibility to move 'resources' (well meaning humans!) between
-activity streams without needing to get in-depth in, e.g. AWS, if they regularly work with Azure.  InSpec is
-technologically agnostic but through it's powerful 'profiles' it can quickly be bent to your will as an AWS Cli framework, a Terraform Testing tool, Machine image testing
-(e.g. presence of access ports, bespoke directories).
+While working on a project with a wide range of technologies (Azure, AWS, Terraform, Scaffold, Workspaces (Linux, Windows)) which is open ended in terms of tech-stack, I wanted to create a framework to address a number of QA dev's challenges but as the lead, wanted the flexibility to move 'resources' (well meaning humans!) between
+activity streams, without needing to get in-depth in, e.g. AWS, if they regularly work with Azure.  InSpec is
+technologically agnostic, but through it's powerful 'profiles' it can quickly be bent to your will as an AWS Cli framework, a Terraform Testing tool, Machine image testing
+(e.g. presence of access ports, bespoke directories), and so on.
 
 With Infrastructure there are often details in the 
 configuration which are not of concern, so for example, an AWS Spec auto-discover can provide an overwhelming maintenance burden.  The proposal with this framework 
