@@ -7,7 +7,7 @@
     "comments": "Comment[]"
   },
   "Comment": {
-    "body": "string",
+    "body": "Edsreallylongstring",
     "post": "Post"
   }
 }
