@@ -1,0 +1,13 @@
+{
+  "Post": {
+    "title": "Testing APIs is cool",
+    "views": "All my own",
+    "published": "boolean",
+    "createdAt": "12-03-21",
+    "comments": "Comment[]"
+  },
+  "Comment": {
+    "body": "InSpec can be fun!",
+    "post": "Post"
+  }
+}
