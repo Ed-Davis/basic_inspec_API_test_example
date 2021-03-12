@@ -1,4 +1,19 @@
-# Example InSpec Profile
+# InSpec Overview and Rationale for choosing:
+
+While working on a project with a wide range of technologies (Azure, AWS, Terraform, Scaffold, Workspaces (Linux, Windows)) which is open ended
+I wanted to create a framework to address a number of QA dev's challenges but as the lead, wanted the flexibility to move 'resources' (well meaning humans!) between
+activity streams without needing to get in-depth in, e.g. AWS, if they regularly work with Azure.  InSpec is
+technologically agnostic but through it's powerful 'profiles' it can quickly be bent to your will as an AWS Cli framework, a Terraform Testing tool, Machine image testing
+(e.g. presence of access ports, bespoke directories).
+
+With Infrastructure there are often details in the 
+configuration which are not of concern, so for example, an AWS Spec auto-discover can provide an overwhelming maintenance burden.  The proposal with this framework 
+is to only include the absolute essential requirements which must be checked on build.  For example, a route in a NACL which must persist when other resources or 
+deployed/redeployed, in order to ensure a critical service remains functional.
+
+The use of a common 'spec' interface is very human readable and using a common declaration structure hopes to make QA resources more flexible on complex projects.
+
+## Example InSpec Profile
 
 This example shows the implementation of an InSpec profile.
 
